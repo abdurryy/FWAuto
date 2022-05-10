@@ -1,0 +1,282 @@
+body {
+    background: rgba(53, 49, 86, 1.0);
+    background: -webkit-linear-gradient(left, rgba(53, 49, 86, 1.0), rgba(21, 18, 32, 1.0));
+    background: -moz-linear-gradient(left, rgba(53, 49, 86, 1.0), rgba(21, 18, 32, 1.0));
+    background: linear-gradient(to right, rgba(53, 49, 86, 1.0), rgba(21, 18, 32, 1.0));
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Poppins";
+    color:rgb(29, 27, 47);
+}
+
+#intro-card {
+    display: flex;
+    justify-content: center;
+    animation: introCard 2s 1, introCard_end 2s 1 3s;
+}
+
+#intro-card div {
+    margin-top: 35vh;
+}
+
+#intro-card div img{
+    height: 150px;
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+    animation: pop 0.5s 1;
+}
+
+.login {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 5px;
+}
+
+.login p{
+    margin-top: -20px;
+}
+
+.login button{
+    background-color: #353156;
+    border-radius: 5px;
+    border: 0;
+    color: rgba(255, 255, 255, 0.97);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login button:hover {
+    background-color: #4b4678;
+}
+
+#buy-container {
+    display: flex;
+    justify-content: center;
+    animation: pop 0.5s 1;
+}
+
+#buy-container div {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 5px;
+    margin-top: 10vh;
+}
+
+#buy-container san {
+    margin-left: 10px;
+    color: rgb(30, 161, 30);
+}
+
+#buy-container div p {
+    margin-top: -20px;
+}
+
+#buy-container div button {
+    margin-top: 10px;
+    padding: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: rgb(30, 161, 30);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+#buy-container div button:hover {
+    background-color: rgb(28, 195, 28);
+}
+
+#buy-container div section {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#farm-panels {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    animation: pop 0.5s 1;
+}
+
+.farm-panel {
+    background-color: rgba(255, 255, 255, 0.97);
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.farm-panel p{
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.farm-panel span{
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.farm-panel button {
+    margin: 10px;
+    margin-left: 0;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #353156;
+    color: rgba(255, 255, 255, 0.97);
+    border: 0px;
+    border-radius: 5px;
+}
+
+.farm-panel button:hover{
+    background-color: #58547e;
+}
+
+.farm-panel input {
+    background-color: #353156;
+    color: rgba(255, 255, 255, 0.97);
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -10px;
+}
+
+.farm-item {
+    border: 2px solid #353156;
+    padding: 2.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.log-item {
+    border-bottom: 2px solid #353156;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+strong {
+    font-weight: 500;
+}
+
+#popup-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    z-index: 100;
+    animation: pop 0.5s 1;
+    top:0;
+}
+
+#popup{
+    position: absolute;
+    top: 33vh;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    padding-top: 0;
+    width: 500px;
+    border-radius: 5px;
+    border:2px solid #35315661;
+}
+
+#res {
+    margin-top: -20px;
+}
+button {
+    margin-top: 30px;
+    background-color: #353156;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 0;
+    color: rgba(255, 255, 255, 0.97);
+}
+
+button:hover {
+    background-color: #4a457a;
+}
+
+.farm-item:hover {
+    opacity: 0.5;
+}
+
+*:focus {
+    outline:none;
+}
+
+#account-display {
+    margin-bottom: 10px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+#account-display h1 {
+    font-size: 150%;
+}
+
+#account-display p {
+    margin-top: -15px;
+}
+
+#account-display a {
+    background-color: rgb(0, 195, 0);
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@keyframes introCard {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+@keyframes unpop {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+@keyframes introCard_end {
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "INFO":"CHANGE 'YOUR.WALLET' TO YOUR WALLET",
+  "authorized_wallets": [
+    {
+      "wallet": "YOUR.WALLET",
+      "last_invoice": 1649929140.131383,
+      "next_invoice": 2220291897.131383
+    }
+  ]
+}

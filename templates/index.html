@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <meta name="google-site-verification" content="EW_dlqAMiHaOVXNE8hGV-Fq5F4-iLWLiaLhJjRfWhSg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>FWAuto | Farmers World Automation</title>
+    <meta name="title" content="FWAuto | Farmers World Automation">
+    <meta name="description" content="FWAuto is an autofarm that will help you automate your daily Farmers World tasks. Do as 15+ other Farmers World players and use FWAuto.">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQXX0JXE51"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-EQXX0JXE51');</script>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fw-auto.xyz">
+    <meta property="og:title" content="FWAuto | Farmers World Automation">
+    <meta property="og:description" content="FWAuto is an autofarm that will help you automate your daily Farmers World tasks. Do as 15+ other Farmers World players and use FWAuto.">
+    <meta property="og:image" content="{{ url_for('static', filename='assets/banner.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fw-auto.xyz/">
+    <meta property="twitter:title" content="FWAuto | Farmers World Automation">
+    <meta property="twitter:description" content="FWAuto is an autofarm that will help you automate your daily Farmers World tasks. Do as 15+ other Farmers World players and use FWAuto.">
+    <meta property="twitter:image" content="{{ url_for('static', filename='assets/banner.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/logo.png') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Farmers world monitor,Farmers world,fw monitor,fw bot,bot fw, Farmers World Bot,Farmers World autofarm, Wax Loan, Wax CPU, Wax Stake, Wax Loan Service, CPU Loan, CPU Rent, Wax Rent, waxcpu, waxloan">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+</head>
+<body>
+    <div style="margin-top: 10px; margin-bottom:-120px; width: 100%; display: flex; justify-content: center; font-size: 90%; width: 90%; margin-left: 5%;" id="welcome-sign">
+    <p style="text-align: center; color: #353156;  background-color: rgba(255, 255, 255, 0.97); padding: 10px;padding-left: 60px;padding-right: 60px; border-radius: 5px;">🎉Thank you to all the <strong>{{users}}</strong> customers and for <strong>{{visits}}</strong> visits!🎉<br><a href="https://discord.gg/bDWeAk2PjA" style="background-color: rgb(47, 255, 50);padding: 5px;padding-left: 20px;padding-right: 20px; margin-top: 10px; display: block; width: 50px; color: black; text-decoration: none; border-radius: 5px;" target="_blank">Chat</a></p>
+    </div>
+    <div id="popup-container" style="background-color: rgba(0, 0, 0, 0.269);">
+        <div id="popup">
+            <h1 id="title">Alert</h1>
+            <p id="res">This is an alert!</p>
+            <br>
+            <button id="res" onclick="document.getElementById('popup-container').style.display = 'none'">Close</button>
+        </div>
+    </div>
+    <div id="intro-card">
+        <div>
+            <img src="{{ url_for('static', filename='assets/logo.png') }}">
+        </div>
+    </div>
+
+    <div id="login-container" style="display: none; width: 90%; margin-left: 5%;">
+        <div class="login">
+            <h1>Login</h1>
+            <p>
+                Hello there!
+                We're FWAuto, we're one the fastests growing Farmers World autofarm providers.
+                For the cheapest market priced bot you get everything you need to get a great sleep instead of
+                waking up to claim Farmers World assets. In the past days we have accumulated {{visits}} visitors, are you one of our next customers?
+                <br><br>
+                Once you have clicked "continue", you will either get to our panel or be prompted to pay for access.
+            </p>
+            <button onclick="login()">Continue</button>
+        </div>
+    </div>
+    
+
+    <div id="buy-container" style="display: none;margin-bottom: 50px; width: 90%; margin-left: 5%;">
+        <div class="buy-child">
+            <h1>Payment</h1>
+            <p>
+                Our Farmers World bot is paid to create and provide a space without having to deal with 
+                thousands of accounts, which creates a faster and better experience for you as a customer.
+                We're already trusted and used by {{users}} customers, our bot has not dissapointed anyone and each customer
+                is met and left with a smile on their faces. 
+                <br><br>
+                We promise to deliver a fast and reliable tool, with a nice interface.  
+            </p>
+            <img src="https://cdn.discordapp.com/attachments/964529759516237846/965398336851046400/unknown.png" width="100%">
+            <h3>Includes</h3>
+            <section>
+                <li>Live Support via Discord</li>
+                <li>Fast Claiming, Repairing & Refilling</li>
+                <li>Automatic Withdrawals at 5% Market Fee</li>
+                <li>Supports: Tools, Memberships & Crops</li>
+                <li>Easy To Use</li>
+                <li>Guide in Discord</li>
+                <li>More</li>
+            </section>
+            <h3>Notation</h3>
+            <p style="margin-top: -17px;">If you encounter any issue, please click "Chat" at the top of the interface. <br><br><strong>When bought, you will need to wait until page refresh itself and login again.</strong></p>
+            <button onclick="buy_authorize()">Pay</button><san>15 WAX/Monthly</san>
+        </div>
+    </div>
+
+    <div style="width: 90%; margin-left: 5%;margin-bottom: 10px;margin-top: 20px; display: flex; justify-content: center;display:none;" id="account-information" >
+        <div id="account-display">
+            <h1 id="wallet">Contact</h1>
+            <div style="display: none;" id="lfirst">
+                <p style="margin-top: -20px;" id="subscription2">Subscription: <strong>10/10/2022</strong></p>
+                <p style="margin-top: -20px;" id="subscription">Registered: <strong>10/10/2022</strong></p>
+                <p id="referral">Referral: <strong>https://fw-auto.xyz/wallet</strong></p>
+            </div>
+            <a href="https://discord.gg/bDWeAk2PjA" target="_blank">Chat</a>
+        </div>
+    </div>  
+
+    <div id="farm-panels" style="margin-bottom: 20px; display: none; width: 90%; margin-left: 5%;">
+        <div class="farm-panel">
+            <p>Configurations</p>
+            <hr style="background-color: #353156;border: 0;height:2px; border-radius: 5px;margin-top: -5px;">
+            <p>Repairing [%]</p>
+            <input onchange="window.localStorage.setItem('repair%', this.value)" id="repair" placeholder="10%">
+            <p>Energy [%]</p>
+            <input id="energy" onchange="window.localStorage.setItem('energy%', this.value)" placeholder="10%">
+            <p>Withdrawal [AMOUNT]
+            <li style="margin-top: -15px;">Market Fee is 5%</li><li>Amount is reached</li><li style="margin-bottom: 10px;">Tip: don't withdraw gold or food, since you will need it.</li></p>
+            <input id="fww" onchange="window.localStorage.setItem('fww', this.value)" placeholder="0 FWW"><input onchange="window.localStorage.setItem('fwf', this.value)" id="fwf" placeholder="0 FWF"><input id="fwg" onchange="window.localStorage.setItem('fwg', this.value)" placeholder="0 FWG">
+            <button onclick="run(this)">Run</button>
+        </div>
+
+              
+        
+        <div>
+            <div class="farm-panel" style="max-width: 520px;max-height:200px;overflow-y: scroll;">
+                <p><span style="color: #353156;" id="assetsp">Asset</span> <span id="assetst" style="color: #353156;"></span></p>
+                <hr style="background-color: #353156;border: 0;height:2px; border-radius: 5px;margin-top: -5px;">
+
+                <div id="assets" style="display: flex; justify-content: center; flex-wrap: wrap;">
+                    <div class="farm-item">
+                        No assets loaded
+                    </div>
+                </div>
+            </div>
+            <div id="log-bottom" class="farm-panel" style="max-width: 520px; max-height:150px; overflow-y: scroll;">
+                <p>Logs</p>
+                <hr style="background-color: #353156;border: 0;height:2px; border-radius: 5px;margin-top: -5px;">
+                <div id="logs" style="display: flex; justify-content: center; flex-wrap: wrap;">
+                    None
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+        
+</body>
+<script src="https://unpkg.com/anchor-link@3"></script>
+<script src="https://unpkg.com/anchor-link-browser-transport@3"></script>
+<script src="{{ url_for('static', filename='js/intro.js') }}"></script>
+<script src="{{ url_for('static', filename='js/waxjs.js') }}"></script>
+<script src="{{ url_for('static', filename='js/store.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/payment.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bot.js') }}"></script>
+</html>
